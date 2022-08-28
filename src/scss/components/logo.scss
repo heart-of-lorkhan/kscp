@@ -1,0 +1,7 @@
+.header__logo img {
+  width: 164px;
+  @include tablet-large {
+    height: 67px;
+    width: 100%;
+  }
+}

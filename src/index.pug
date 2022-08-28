@@ -1,0 +1,91 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Kent SCP - Social Campaign'
+
+append vars
+  //-
+
+block content
+  main.main
+    section.hero
+      .container.hero__inner
+        .hero__text
+          h1.title.hero__title(data-scrollspy="animate__fadeInLeft") We’re hiring<br> Care Assistants
+          h2.hero__subtitle(data-scrollspy="animate__fadeInLeft") Could you be a best friend?
+          .hero__info(data-scrollspy="animate__fadeInLeft")
+            p Being a Care Assistant at Kent Social Care Professionals is more than providing personal care and home visits — it’s about building connections and becoming a best friend.
+          .hero__buttons
+            button.button.button-apply(data-scrollto="#form") Apply now
+            button.button.button-request(data-scrollto="#request") Request a callback
+        .hero__img(data-scrollspy="animate__fadeInRight")
+          img(src="img/image1.png" alt="We’re hiring Care Assistants.")
+    section.section-cards 
+      .container
+        .card.card-join
+          .card__content(data-scrollspy="animate__fadeInLeft")
+            h3.title.card__title Join the Kent SCP team 
+            p.text.card__text At Kent SCP, our dedicated carers step out into the local community every day to provide quality care service to elderly or vulnerable customers within the comfort of their own homes. Our Care Assistants enjoy a rewarding career where they make a positive difference to someone’s life, providing independence, support and a best friend to share their daily activities with. As a Care Assistant with Kent SCP you will be supported every step of the way whilst you bring hope to those who need it most. 
+            .card__buttons
+              button.button.button-apply(data-scrollto="#form") Apply now
+              button.button.button-request(data-scrollto="#request") Request a callback
+          .card__img(data-scrollspy="animate__fadeInRight")
+            img(src="img/image2.png" alt="Join the Kent SCP team.")
+        .card.card-role
+          .card__content(data-scrollspy="animate__fadeInLeft")
+            h3.title.card__title Role and responsibilities 
+            p.text.card__text We support people over the age of 18 with person-centred care, such as physical disabilities, dementia, mental health needs, learning difficulties, elderly frail and end of life care. Other responsibilities include:  
+            ul.card-role__list 
+              li 
+                span Medication support
+              li 
+                span Nutritional and fluids support & monitoring
+              li
+                span Shopping
+              li 
+                span Social support, such as attending the cinema, beach, and other days out
+              li 
+                span Incontinence, stoma and catheter care
+              li 
+                span Working with other stakeholders such as district nurses
+              li 
+                span Palliative care
+              li 
+                span Domestic support
+              li 
+               span Mental health support
+              li
+                span Supporting families and mediating when they face challenges
+          .card__img(data-scrollspy="animate__fadeInRight")
+            img(src="img/image3.png" alt="Role and responsibilities.")
+        .card.card-mission
+          .card__content(data-scrollspy="animate__fadeInLeft")
+            h3.title.card__title Our mission and values
+            p.text.card__text Our core aim is to deliver flexible, community-based care support in Kent, always striving to promote independence, dignity and choice among clients.
+            ul.card-mission__list 
+              li
+                .card-mission__icon 
+                  img(src="img/we-care.svg" alt="we care.") 
+                div We Care
+              li
+                .card-mission__icon 
+                  img(src="img/we-listen.svg" alt="we listen.") 
+                div We Listen
+              li
+                .card-mission__icon 
+                  img(src="img/we-strive.svg" alt="we strive.") 
+                div We Strive
+              li
+                .card-mission__icon 
+                  img(src="img/we-build.svg" alt="we build.") 
+                div We Build
+          .card__img(data-scrollspy="animate__fadeInRight")
+            img(src="img/image4.png" alt="Our mission and values.")
+    section.summary 
+      .container-sm
+        h2.title.summary__title(data-scrollspy="animate__fadeInLeft") Do you have what it takes to become someone’s best friend?
+        p.summary__text(data-scrollspy="animate__fadeInLeft") Be part of the team with Kent Social Care Professionals and make difference to the lives of those and our community.
+        .summary__buttons(data-scrollspy="animate__fadeInRight")
+          button.button.button-apply(data-scrollto="#form") Apply now
+          button.button.button-request(data-scrollto="#request") Request a callback
